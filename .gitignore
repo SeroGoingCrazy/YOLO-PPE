@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+Thumbs.db
+
+# Experiment outputs
+runs/
+outputs/
+artifacts/
+datasets/
+
+# IDE
+.vscode/
+.idea/
