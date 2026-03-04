@@ -170,3 +170,4 @@ python .\scripts\save_versions.py
 输出文件：
 
 - `artifacts/versions.json`
+<img width="1024" height="683" alt="image" src="https://github.com/user-attachments/assets/5011dd3a-0958-415f-b2a0-f1f91f8f4414" />
