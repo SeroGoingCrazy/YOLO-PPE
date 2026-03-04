@@ -1,0 +1,12 @@
+path: datasets/ppe-hv
+train: train/images
+val: valid/images
+test: test/images
+
+names:
+  0: Hardhat
+  1: NO-Hardhat
+  2: Safety Vest
+  3: NO-Safety Vest
+  4: Person
+

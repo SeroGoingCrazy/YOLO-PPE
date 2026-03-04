@@ -52,19 +52,19 @@ datasets/ppe-construction/
 
 ## 3) 训练（输出 best.pt）
 
-训练配置在 `configs/train_config.yaml`：
+训练配置在 `configs/train_config_hv.yaml`：
 
-- 模型：`yolo11n.pt`
+- 模型：`yolo11m.pt`
 - 输入尺寸：`640`
-- 轮次：`80`
-- batch：`16`
+- 轮次：`120`
+- batch：`4`
 - 优化器：`AdamW`
 - 初始学习率：`0.001`
 
 开始训练：
 
 ```powershell
-python .\scripts\train.py --config .\configs\train_config.yaml --name ppe_exp
+python .\scripts\train.py --config .\configs\train_config_hv.yaml --name ppe_best_exp
 ```
 
 训练结束后，模型会自动复制到：
@@ -158,7 +158,7 @@ python .\scripts\export_models.py --weights .\artifacts\best.pt --engine --devic
 
 - Python / CUDA / torch / ultralytics 版本
 - 数据集版本和划分比例
-- 训练配置文件（`configs/train_config.yaml`）与最终权重（`artifacts/best.pt`）
+- 训练配置文件（`configs/train_config_hv.yaml`）与最终权重（`artifacts/best.pt`）
 - 验证报告（`outputs/eval_report/metrics.json`）
 
 可自动导出运行环境版本：

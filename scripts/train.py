@@ -15,8 +15,8 @@ def load_cfg(path: str) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Train YOLO PPE detector")
-    parser.add_argument("--config", default="configs/train_config.yaml")
-    parser.add_argument("--name", default="ppe_exp")
+    parser.add_argument("--config", default="configs/train_config_hv.yaml")
+    parser.add_argument("--name", default="ppe_best_exp")
     args = parser.parse_args()
 
     cfg = load_cfg(args.config)

@@ -10,6 +10,7 @@ runs/
 outputs/
 artifacts/
 datasets/
+yolo*.pt
 
 # IDE
 .vscode/
